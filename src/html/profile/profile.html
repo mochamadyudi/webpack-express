@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Webpack App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <a class="navbar-brand" href="/" style="cursor: pointer;">
+            <img src="/assets/favicon.ico" alt="" style="width:2rem;height: 2rem">
+            <h3 style="pointer-events: none">GODEYE</h3>
+        </a>
+        <div class="navbar--spacer"></div>
+        <div class="navbar--menus">
+
+            <div class="dropdown-lang"></div>
+            <div class="dropdown-logout">
+                <button id="btn--logout"><span class="fas fa-sign-out-alt fa-fw"></span>Logout</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div id="wrapper">
+        <div class="tab-nav--profile">
+            <a class="tablinks active"  href="/profile">Nik</a>
+            <a class="tablinks" href="/profile/advanced">Advanced</a>
+        </div>
+        <div style="height:40px;display: none;align-items: center;padding:0 10px;" id="msg--profile-nik">
+
+        </div>
+        <div class="tab--pannel-profile" id=0>
+            <form class="form--panel" id="form--profile-nik">
+                <div class="row-profile">
+                    <input
+                            type="text"
+                            name="nik"
+                            id="nik--input"
+                            placeholder="masukkan nik"
+                            autocomplete="off"
+                            class="input-profile-nik" >
+                    <button type="submit" id="btn--profile-nik">CARI</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>

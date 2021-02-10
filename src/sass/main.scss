@@ -1,0 +1,32 @@
+:root {
+  --card:#000;
+  --secondary:#C2C2C2;
+  --input-border:#262626;
+  --background: #050505;
+  --text: #fff;
+  --white: #fff;
+  --red: #FF0202;
+  --red-hover:#FF3434;
+  --blue:#194EB0;
+  --blue-hover:#0C3E99;
+  --success:#29BE33;
+  --success-hover:#14D20A;
+  --warn:#FFAB15;
+  --warn-hover:#FFA400;
+  --purple:#B9099D;
+  --purple-hover:#A20088;
+  --purples:#5A17B3;
+  --purples-hover:#3F0A86;
+}
+
+body{
+  background:lighten(black,10%);
+  color: white;
+}
+#wrapper{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+@import "old/style";
